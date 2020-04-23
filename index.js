@@ -31,3 +31,15 @@ var img2 = document.querySelectorAll("img")[1];
 
 //Sets the attribute of the element to the random image selected
 img2.setAttribute("src", imageAddress);
+
+// ROLL OUTCOME
+
+if (firstRoll > secondRoll) {
+    document.querySelector("h1").innerHTML = "Player 1 Wins!";
+  }
+  else if (secondRoll > firstRoll) {
+    document.querySelector("h1").innerHTML = "Player 2 Wins!";
+  }
+  else {
+    document.querySelector("h1").innerHTML = "Draw!";
+  }
