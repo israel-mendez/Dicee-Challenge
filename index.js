@@ -4,16 +4,13 @@
 var firstRoll = Math.floor(Math.random() * 6) + 1;
 
 //Selects an image given a pseudo random number
-var imageSelector = "dice" + firstRoll + ".png";
-
-//Creates the address of the image to be displayed
-var imageAddress = "images/" + imageSelector; 
+var imageSelector1 = "images/dice" + firstRoll + ".png";
 
 //Assigns the a variable the element to be changed
 var img1 = document.querySelectorAll("img")[0];
 
 //Sets the attribute of the element to the random image selected
-img1.setAttribute("src", imageAddress);
+img1.setAttribute("src", imageSelector1);
 
 // RIGHT DICE
 
@@ -21,16 +18,13 @@ img1.setAttribute("src", imageAddress);
 var secondRoll = Math.floor(Math.random() * 6) + 1;
 
 //Selects an image given a pseudo random number
-var imageSelector = "dice" + secondRoll + ".png";
-
-//Creates the address of the image to be displayed
-var imageAddress = "images/" + imageSelector; 
+var imageSelector2 = "images/dice" + secondRoll + ".png";
 
 //Assigns the a variable the element to be changed
 var img2 = document.querySelectorAll("img")[1];
 
 //Sets the attribute of the element to the random image selected
-img2.setAttribute("src", imageAddress);
+img2.setAttribute("src", imageSelector2);
 
 // ROLL OUTCOME
 
